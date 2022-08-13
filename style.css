@@ -177,7 +177,7 @@ display: flex;
 
 /* media queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
     .header{
         position: absolute;
@@ -202,7 +202,7 @@ display: flex;
     .items{
         color: black;
         font-size: 3.8vh;
-        margin: 15px 0px;
+        margin: 15px -15px;
     }
 
     ul{
