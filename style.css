@@ -47,7 +47,7 @@ ul{
     display: flex;
     height: 100vh;
     background: url(./Imagens/pexels-dmitry-zvolskiy-1570807.jpg) center center/ cover;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
     color: white;
     align-items: center;
@@ -206,7 +206,7 @@ display: flex;
     }
 
     ul{
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     .h1-section{
