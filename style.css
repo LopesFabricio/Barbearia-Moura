@@ -176,9 +176,9 @@ display: flex;
     }
 
     .rect{
-         height: 25vh;
+         height: 200px;
          width: 180px; 
-    }
+    }  
 
 }
 
