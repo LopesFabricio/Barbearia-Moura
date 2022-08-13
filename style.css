@@ -15,7 +15,7 @@ a{
 
 .header{
     width: 100%;
-    background-color: #314d4aa2;
+    background-color: #314d4add;
     color: black;
     position: fixed;
     font-family: 'Italianno', cursive; 
@@ -38,7 +38,7 @@ ul{
 .items{
     color: black;
     font-size: 5vh;
-    padding-left: 60px;
+    padding-left: 65px;
 }
 
 /* showcase */
@@ -83,10 +83,24 @@ ul{
 
 }
 
+/* tabela de preço */
+
+.precos{
+    background-color: #d7dacfd9;
+}
+
+#tabela-precos{
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    padding: 20px;
+    font-size: 4vh;
+}
+
 /* galeria */
 
 #galeria{
-    background-color: #5058616d;
+    
+    background-color: #2a2c31d4;
     display: grid;
     grid-template-areas: "r1 r1 r2 r2 r3 r3"
                           "r4 r4 r5 r5 r6 r6";
@@ -163,8 +177,12 @@ display: flex;
 
 /* media queries */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
+    .header{
+        position: absolute;
+        background-color: #314d4ac8;
+    }
     .header-container{
         display: flex;
         flex-direction: column; 
@@ -173,7 +191,6 @@ display: flex;
 
     .navebar{
         display: flex;
-        flex-direction: column;
         position: relative;
         right: 80px;
     }
@@ -184,8 +201,12 @@ display: flex;
     }
     .items{
         color: black;
-        font-size: 3.5vh;
-        padding-left: 60px;
+        font-size: 3.8vh;
+        margin: 15px 0px;
+    }
+
+    ul{
+        margin-left: 60px;
     }
 
     .h1-section{
