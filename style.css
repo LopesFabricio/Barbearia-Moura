@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 a{
@@ -15,10 +15,10 @@ a{
 
 .header{
     width: 100%;
-    background-color: #fdd1b6b7;
+    background-color: #314d4aa2;
     color: black;
     position: fixed;
-    font-family: 'Italianno', cursive;
+    font-family: 'Italianno', cursive; 
 }
 .header-container{
     display: flex;
@@ -29,7 +29,7 @@ a{
 }
 .titulo{
     font-weight: 500;
-    font-size: 60px;
+    font-size: 9vh;
 }
 ul{
     display: flex;
@@ -37,7 +37,7 @@ ul{
 }
 .items{
     color: black;
-    font-size: 30px;
+    font-size: 5vh;
     padding-left: 60px;
 }
 
@@ -46,7 +46,7 @@ ul{
 #conteudo-principal{
     display: flex;
     height: 100vh;
-    background: url(./Imagens/3605367-monte-o-seu-kit-manicure-com-essas-dicas-opengraph_1200-2.jpg) center center/ cover;
+    background: url(./Imagens/pexels-dmitry-zvolskiy-1570807.jpg) center center/ cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
     color: white;
@@ -55,7 +55,8 @@ ul{
 }
 
 .section-1{
-    font-size: 18px;
+    
+    font-size: 2.5vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -65,10 +66,10 @@ ul{
     padding: 10px 40px;
     border-radius: 8px;
     border: none;
-    background-color: #ffd2cb;
+    background-color: #314d4ade;
     color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 2.5vh;
     text-transform: uppercase;
     transition-property: padding;
     transition-duration: 0.5s;
@@ -82,7 +83,7 @@ ul{
 /* galeria */
 
 #galeria{
-    background-color: #d8d8d8;
+    background-color: #5058616d;
     display: grid;
     grid-template-areas: "r1 r1 r2 r2 r3 r3"
                           "r4 r4 r5 r5 r6 r6";
@@ -92,38 +93,37 @@ ul{
     padding-bottom: 30px;
     grid-gap: 15px;
     align-items: center;
-    justify-content: center;                   
+    justify-content: center;
 }
 
 .rect{
-    
-    height: 250px;
-    width: 230px;
-    
+    height: 35vh;
+    width: 30vh;
+
 }
 
 .r1{
-    background: url(./Imagens/WhatsApp\ Image\ 2022-08-02\ at\ 14.49.26.jpeg) center center / cover;
+    background: url(./Imagens/WhatsApp\ Image\ 2022-08-13\ at\ 13.01.30.jpeg) center center / cover;
     grid-area: r1;
 }
 .r2{
-    background: url(./Imagens/WhatsApp\ Image\ 2022-08-02\ at\ 14.49.26\ \(1\).jpeg) center center / cover;
+    background: url(./Imagens/WhatsApp\ Image\ 2022-08-13\ at\ 13.01.30\ \(1\).jpeg) center center / cover;
     grid-area: r2;
 }
 .r3{
-    background: url(./Imagens/WhatsApp\ Image\ 2022-08-02\ at\ 14.49.27.jpeg) center center / cover;
+    background: url(./Imagens/WhatsApp\ Image\ 2022-08-13\ at\ 13.01.30\ \(2\).jpeg) center center / cover;
     grid-area: r3;
 }
 .r4{
-    background: url(./Imagens/WhatsApp\ Image\ 2022-08-02\ at\ 14.49.27\ \(1\).jpeg) center center / cover;
+    background: url(./Imagens/WhatsApp\ Image\ 2022-08-13\ at\ 13.01.31.jpeg) center center / cover;
     grid-area: r4;
 }
 .r5{
-    background: url(./Imagens/WhatsApp\ Image\ 2022-08-02\ at\ 14.49.27\ \(2\).jpeg) center center / cover;
+    background: url(./Imagens/WhatsApp\ Image\ 2022-08-13\ at\ 13.01.31\ \(1\).jpeg) center center / cover;
     grid-area: r5;
 }
 .r6{
-    background: url(./Imagens/WhatsApp\ Image\ 2022-08-02\ at\ 14.49.27\ \(3\).jpeg) center center / cover;
+    background: url(./Imagens/WhatsApp\ Image\ 2022-08-13\ at\ 13.01.31\ \(2\).jpeg) center center / cover;
     grid-area: r6;
 }
 
@@ -132,21 +132,29 @@ ul{
 #socials{
 background-color: #2a2c31;
 color: white;
-height: 15vh;
 display: flex;
+
 }
 
 .icons{
     text-decoration: none;
     color: white;
-    padding: 5px;
+    margin: 10px 5px;
+    font-size: 2.3vh;
+    
 }
 
 .footer-container{
-    
+
     text-align: center;
     width: 85%;
     margin: auto;
+}
+
+.endereco{
+   
+    color: white;
+    font-size: 2.2vh;
 }
 
 
@@ -154,30 +162,22 @@ display: flex;
 
 @media screen and (max-width: 850px) {
 
-
-    .header{
-        position: absolute;
-    }
     .header-container{
-        display: inline-block;
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
     }
 
-    ul{
-        text-align: center;
-        display: inline-block;
+    .navebar{
+        display: flex;
+        flex-direction: column;
         position: relative;
-        left: 90px;
-    }
-
-    .titulo{
-       position: relative;
-       left: 50px;
-        text-align: center;
+        right: 8%;
     }
 
     .rect{
-        height: 20vh;
-        width: 130px;
+         height: 25vh;
+         width: 22vh; 
     }
 
 }
